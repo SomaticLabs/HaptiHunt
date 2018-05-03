@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		409A4333207EC092000CE67B /* HapticTreasureHuntAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409A4332207EC092000CE67B /* HapticTreasureHuntAppDelegate.swift */; };
+		409A4335207EC092000CE67B /* HapticTreasureHuntViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409A4334207EC092000CE67B /* HapticTreasureHuntViewController.swift */; };
+		409A4338207EC092000CE67B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409A4336207EC092000CE67B /* Main.storyboard */; };
+		409A433A207EC092000CE67B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409A4339207EC092000CE67B /* Assets.xcassets */; };
+		409A433D207EC092000CE67B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409A433B207EC092000CE67B /* LaunchScreen.storyboard */; };
+		409A434F207ED968000CE67B /* TreasureHuntRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 409A434E207ED968000CE67B /* TreasureHuntRenderer.m */; };
+		409A4351207ED9AE000CE67B /* HapticTreasureHuntRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409A4350207ED9AE000CE67B /* HapticTreasureHuntRenderer.swift */; };
+		409A4354207EDA59000CE67B /* success.wav in Resources */ = {isa = PBXBuildFile; fileRef = 409A4352207EDA58000CE67B /* success.wav */; };
+		409A4355207EDA59000CE67B /* cube_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 409A4353207EDA59000CE67B /* cube_sound.wav */; };
+		409A435A207EE0B2000CE67B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409A4356207EE0B2000CE67B /* Alamofire.framework */; };
+		409A435B207EE0B2000CE67B /* SwiftyBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409A4357207EE0B2000CE67B /* SwiftyBluetooth.framework */; };
+		409A435C207EE0B2000CE67B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409A4358207EE0B2000CE67B /* SwiftyJSON.framework */; };
+		409A435D207EE0B2000CE67B /* SwiftyZorb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409A4359207EE0B2000CE67B /* SwiftyZorb.framework */; };
+		F96DE8C9477F6C5BD1029C76 /* libPods-HapticTreasureHunt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5360E71A007E3D8839ADD236 /* libPods-HapticTreasureHunt.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		409A432F207EC092000CE67B /* HapticTreasureHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapticTreasureHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		409A4332207EC092000CE67B /* HapticTreasureHuntAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTreasureHuntAppDelegate.swift; sourceTree = "<group>"; };
+		409A4334207EC092000CE67B /* HapticTreasureHuntViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTreasureHuntViewController.swift; sourceTree = "<group>"; };
+		409A4337207EC092000CE67B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		409A4339207EC092000CE67B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		409A433C207EC092000CE67B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		409A433E207EC092000CE67B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		409A434D207ED967000CE67B /* TreasureHuntRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreasureHuntRenderer.h; sourceTree = "<group>"; };
+		409A434E207ED968000CE67B /* TreasureHuntRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreasureHuntRenderer.m; sourceTree = "<group>"; };
+		409A4350207ED9AE000CE67B /* HapticTreasureHuntRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTreasureHuntRenderer.swift; sourceTree = "<group>"; };
+		409A4352207EDA58000CE67B /* success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = success.wav; sourceTree = SOURCE_ROOT; };
+		409A4353207EDA59000CE67B /* cube_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cube_sound.wav; sourceTree = SOURCE_ROOT; };
+		409A4356207EE0B2000CE67B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		409A4357207EE0B2000CE67B /* SwiftyBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBluetooth.framework; path = Carthage/Build/iOS/SwiftyBluetooth.framework; sourceTree = "<group>"; };
+		409A4358207EE0B2000CE67B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		409A4359207EE0B2000CE67B /* SwiftyZorb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyZorb.framework; path = Carthage/Build/iOS/SwiftyZorb.framework; sourceTree = "<group>"; };
+		5291C45F666DBE0AC5F23CC9 /* Pods-HapticTreasureHunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HapticTreasureHunt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HapticTreasureHunt/Pods-HapticTreasureHunt.debug.xcconfig"; sourceTree = "<group>"; };
+		5360E71A007E3D8839ADD236 /* libPods-HapticTreasureHunt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HapticTreasureHunt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		719118138F6E6B55EAA2E3E8 /* Pods-HapticTreasureHunt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HapticTreasureHunt.release.xcconfig"; path = "Pods/Target Support Files/Pods-HapticTreasureHunt/Pods-HapticTreasureHunt.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		409A432C207EC092000CE67B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96DE8C9477F6C5BD1029C76 /* libPods-HapticTreasureHunt.a in Frameworks */,
+				409A435A207EE0B2000CE67B /* Alamofire.framework in Frameworks */,
+				409A435B207EE0B2000CE67B /* SwiftyBluetooth.framework in Frameworks */,
+				409A435C207EE0B2000CE67B /* SwiftyJSON.framework in Frameworks */,
+				409A435D207EE0B2000CE67B /* SwiftyZorb.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		409A4326207EC092000CE67B = {
+			isa = PBXGroup;
+			children = (
+				409A4331207EC092000CE67B /* HapticTreasureHunt */,
+				409A4330207EC092000CE67B /* Products */,
+				410CF1FFB112AA52EB487B60 /* Pods */,
+				65DC9549452B57362E7F14A9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		409A4330207EC092000CE67B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				409A432F207EC092000CE67B /* HapticTreasureHunt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		409A4331207EC092000CE67B /* HapticTreasureHunt */ = {
+			isa = PBXGroup;
+			children = (
+				409A4353207EDA59000CE67B /* cube_sound.wav */,
+				409A4352207EDA58000CE67B /* success.wav */,
+				409A4332207EC092000CE67B /* HapticTreasureHuntAppDelegate.swift */,
+				409A4334207EC092000CE67B /* HapticTreasureHuntViewController.swift */,
+				409A4350207ED9AE000CE67B /* HapticTreasureHuntRenderer.swift */,
+				409A434D207ED967000CE67B /* TreasureHuntRenderer.h */,
+				409A434E207ED968000CE67B /* TreasureHuntRenderer.m */,
+				409A4336207EC092000CE67B /* Main.storyboard */,
+				409A4339207EC092000CE67B /* Assets.xcassets */,
+				409A433B207EC092000CE67B /* LaunchScreen.storyboard */,
+				409A433E207EC092000CE67B /* Info.plist */,
+			);
+			path = HapticTreasureHunt;
+			sourceTree = "<group>";
+		};
+		410CF1FFB112AA52EB487B60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5291C45F666DBE0AC5F23CC9 /* Pods-HapticTreasureHunt.debug.xcconfig */,
+				719118138F6E6B55EAA2E3E8 /* Pods-HapticTreasureHunt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		65DC9549452B57362E7F14A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				409A4356207EE0B2000CE67B /* Alamofire.framework */,
+				409A4357207EE0B2000CE67B /* SwiftyBluetooth.framework */,
+				409A4358207EE0B2000CE67B /* SwiftyJSON.framework */,
+				409A4359207EE0B2000CE67B /* SwiftyZorb.framework */,
+				5360E71A007E3D8839ADD236 /* libPods-HapticTreasureHunt.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		409A432E207EC092000CE67B /* HapticTreasureHunt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 409A4341207EC092000CE67B /* Build configuration list for PBXNativeTarget "HapticTreasureHunt" */;
+			buildPhases = (
+				D37AFF6D5E4DE1228D9B3F5C /* [CP] Check Pods Manifest.lock */,
+				409A432B207EC092000CE67B /* Sources */,
+				409A432C207EC092000CE67B /* Frameworks */,
+				409A432D207EC092000CE67B /* Resources */,
+				6986D2929ECDCD21A66F33A7 /* [CP] Copy Pods Resources */,
+				409A436D207F0AA3000CE67B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HapticTreasureHunt;
+			productName = HapticTreasureHunt;
+			productReference = 409A432F207EC092000CE67B /* HapticTreasureHunt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		409A4327207EC092000CE67B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Jacob Rockland";
+				TargetAttributes = {
+					409A432E207EC092000CE67B = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 409A432A207EC092000CE67B /* Build configuration list for PBXProject "HapticTreasureHunt" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 409A4326207EC092000CE67B;
+			productRefGroup = 409A4330207EC092000CE67B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				409A432E207EC092000CE67B /* HapticTreasureHunt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		409A432D207EC092000CE67B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409A4354207EDA59000CE67B /* success.wav in Resources */,
+				409A433D207EC092000CE67B /* LaunchScreen.storyboard in Resources */,
+				409A433A207EC092000CE67B /* Assets.xcassets in Resources */,
+				409A4355207EDA59000CE67B /* cube_sound.wav in Resources */,
+				409A4338207EC092000CE67B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		409A436D207F0AA3000CE67B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyBluetooth.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyZorb.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyBluetooth.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyJSON.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyZorb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		6986D2929ECDCD21A66F33A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HapticTreasureHunt/Pods-HapticTreasureHunt-resources.sh",
+				"${PODS_ROOT}/GVRSDK/Resources/CardboardSDK.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitCore.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitDialogs.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitHUD.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/MaterialRobotoFontLoader.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CardboardSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitCore.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitDialogs.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialRobotoFontLoader.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HapticTreasureHunt/Pods-HapticTreasureHunt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D37AFF6D5E4DE1228D9B3F5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HapticTreasureHunt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		409A432B207EC092000CE67B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409A4335207EC092000CE67B /* HapticTreasureHuntViewController.swift in Sources */,
+				409A4351207ED9AE000CE67B /* HapticTreasureHuntRenderer.swift in Sources */,
+				409A434F207ED968000CE67B /* TreasureHuntRenderer.m in Sources */,
+				409A4333207EC092000CE67B /* HapticTreasureHuntAppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		409A4336207EC092000CE67B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				409A4337207EC092000CE67B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		409A433B207EC092000CE67B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				409A433C207EC092000CE67B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		409A433F207EC092000CE67B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		409A4340207EC092000CE67B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		409A4342207EC092000CE67B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5291C45F666DBE0AC5F23CC9 /* Pods-HapticTreasureHunt.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6NBXW22Z9U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = HapticTreasureHunt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SomaticLabs.HapticTreasureHunt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HapticTreasureHunt-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		409A4343207EC092000CE67B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 719118138F6E6B55EAA2E3E8 /* Pods-HapticTreasureHunt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6NBXW22Z9U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = HapticTreasureHunt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SomaticLabs.HapticTreasureHunt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HapticTreasureHunt-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		409A432A207EC092000CE67B /* Build configuration list for PBXProject "HapticTreasureHunt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409A433F207EC092000CE67B /* Debug */,
+				409A4340207EC092000CE67B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		409A4341207EC092000CE67B /* Build configuration list for PBXNativeTarget "HapticTreasureHunt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409A4342207EC092000CE67B /* Debug */,
+				409A4343207EC092000CE67B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 409A4327207EC092000CE67B /* Project object */;
+}

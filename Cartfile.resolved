@@ -1,0 +1,4 @@
+github "Alamofire/Alamofire" "4.7.2"
+github "SomaticLabs/SwiftyZorb" "2.3.1"
+github "SwiftyJSON/SwiftyJSON" "4.1.0"
+github "jordanebelanger/SwiftyBluetooth" "1.0.0"
