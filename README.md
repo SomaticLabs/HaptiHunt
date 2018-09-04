@@ -1,6 +1,6 @@
 # HaptiHunt
 
-*A simple game to demonstrate the potential for haptic guidance in VR, using [Zorb Touch](https://zorbtouch.com).*
+*A simple game to demonstrate haptic guidance in VR, using [Zorb Touch](https://zorbtouch.com).*
 
 [![license](https://img.shields.io/badge/license-Apache%202.0-green.svg)](https://github.com/SomaticLabs/HaptiHunt/blob/master/LICENSE)
 [![Twitter](https://img.shields.io/badge/twitter-@SomaticLabs-orange.svg?style=flat)](http://twitter.com/SomaticLabs)
