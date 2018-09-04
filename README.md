@@ -11,6 +11,10 @@ pod update
 carthage update --platform iOS
 ```
 
+## Icon Attribution
+
+["Tweemoji"](https://github.com/twitter/twemoji) by Twitter / CC-BY 4.0
+
 ## License / Notice
 
 This demo is an extension of a [Google Cardboard demo provided by Google](https://github.com/googlevr/gvr-ios-sdk.git
