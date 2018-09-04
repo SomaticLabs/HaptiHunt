@@ -17,5 +17,9 @@ carthage update --platform iOS
 
 ## License / Notice
 
+This project is licensed under the [Apache License 2.0](https://github.com/SomaticLabs/HaptiHunt/blob/master/LICENSE).
+
 This demo is an extension of a [Google Cardboard demo provided by Google](https://github.com/googlevr/gvr-ios-sdk/tree/master/Samples/TreasureHunt
-), using their SDK licensed under the Apache 2.0 license. 
+), using their SDK licensed under the Apache License 2.0.
+
+This demo also makes use of [SwitfyZorb](https://github.com/SomaticLabs/SwiftyZorb), which is licensed under the [GNU General Public License v3.0](https://github.com/SomaticLabs/SwiftyZorb/blob/master/LICENSE).
