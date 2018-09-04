@@ -1,5 +1,8 @@
 # HaptiHunt
 
+[![license](https://img.shields.io/badge/license-Apache%202.0-green.svg)](https://github.com/SomaticLabs/HaptiHunt/blob/master/LICENSE)
+[![Twitter](https://img.shields.io/badge/twitter-@SomaticLabs-orange.svg?style=flat)](http://twitter.com/SomaticLabs)
+
 A simple game to demonstrate the potential for haptic guidance in VR, using [Zorb Touch](https://zorbtouch.com). 
 
 Made for any Google Cardboard or Google Daydream headset, this demo is a treasure hunt where the user is guided with haptic effects to look for randomly generated cubes in their 3D environment.
