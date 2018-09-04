@@ -1,3 +1,5 @@
+// This file is from a Google Cardboard demo provided by Google: https://github.com/googlevr/gvr-ios-sdk/tree/master/Samples/TreasureHunt
+
 #if !defined(__has_feature) || !__has_feature(objc_arc)
 #error "This file requires ARC support. Compile with -fobjc-arc"
 #endif

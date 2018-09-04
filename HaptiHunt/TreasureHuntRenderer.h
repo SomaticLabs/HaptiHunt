@@ -1,3 +1,5 @@
+// This file is from a Google Cardboard demo provided by Google: https://github.com/googlevr/gvr-ios-sdk/tree/master/Samples/TreasureHunt
+
 #import "GVRAudioEngine.h"
 #import "GVRKit/GVRRenderer.h"
 

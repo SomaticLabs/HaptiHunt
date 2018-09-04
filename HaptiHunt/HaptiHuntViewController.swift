@@ -1,15 +1,18 @@
 //
-//  HapticTreasureHuntViewController.swift
-//  HapticTreasureHunt
+//  HaptiHuntViewController.swift
+//  HaptiHunt
 //
 //  Created by Jacob Rockland on 4/11/18.
-//  Copyright © 2018 Jacob Rockland. All rights reserved.
+//  Copyright © 2018 Somatic Labs. All rights reserved.
 //
 
 import UIKit
 import SwiftyZorb
 
-class HapticTreasureHuntViewController: UIViewController, GVRRendererViewControllerDelegate {
+/**
+ Custom view controller for adding haptic effects to Google Cardboard demo
+ */
+class HaptiHuntViewController: UIViewController, GVRRendererViewControllerDelegate {
     
     /// Method called after view has loaded
     override func viewDidLoad() {
@@ -19,7 +22,7 @@ class HapticTreasureHuntViewController: UIViewController, GVRRendererViewControl
         self.view.backgroundColor = UIColor.white
         
         // Embedded (widget) view with its own view controller.
-        let renderer = HapticTreasureHuntRenderer()
+        let renderer = HaptiHuntRenderer()
         let viewController = GVRRendererViewController(renderer: renderer)
         viewController?.delegate = self
         viewController?.view.frame = CGRect(x: 20, y: 50, width: self.view.bounds.width - 40, height: 200)
@@ -28,7 +31,7 @@ class HapticTreasureHuntViewController: UIViewController, GVRRendererViewControl
         self.addChildViewController(viewController!)
 
         // Attempt to create a connection to Moment device
-//        SwiftyZorb.forget()
+        SwiftyZorb.forget()
         SwiftyZorb.connect { result in
             switch result {
             case .success:
@@ -59,9 +62,11 @@ class HapticTreasureHuntViewController: UIViewController, GVRRendererViewControl
         present(alertController, animated: true, completion: nil)
     }
     
+    /// Set rendered use by view controller
     func renderer(for displayMode: GVRDisplayMode) -> GVRRenderer! {
-        // Always present (not push) view controller for fullscreen landscape right VR mode.
-        return HapticTreasureHuntRenderer()
+        // Use custom rendered for adding haptic effects
+        // Always present (not push) view controller for fullscreen landscape right VR mode
+        return HaptiHuntRenderer()
     }
 
 }

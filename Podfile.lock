@@ -1,14 +1,14 @@
 PODS:
-  - GoogleToolboxForMac/Defines (2.1.0)
-  - GoogleToolboxForMac/Logger (2.1.0):
-    - GoogleToolboxForMac/Defines (= 2.1.0)
-  - GTMSessionFetcher/Core (1.1.6)
-  - GVRAudioSDK (1.120.0)
-  - GVRKit (1.120.0):
-    - GVRSDK (= 1.120.0)
-  - GVRSDK (1.120.0):
-    - GoogleToolboxForMac/Logger (= 2.1.0)
-    - GTMSessionFetcher/Core (= 1.1.6)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - GoogleToolboxForMac/Logger (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GTMSessionFetcher/Core (1.2.0)
+  - GVRAudioSDK (1.140.0)
+  - GVRKit (1.140.0):
+    - GVRSDK (= 1.140.0)
+  - GVRSDK (1.140.0):
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - GTMSessionFetcher/Core (~> 1.1)
 
 DEPENDENCIES:
   - GVRAudioSDK
@@ -23,12 +23,12 @@ SPEC REPOS:
     - GVRSDK
 
 SPEC CHECKSUMS:
-  GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
-  GTMSessionFetcher: 6aacd0ab48ddf0c3633ab2642d792abfcad1b08a
-  GVRAudioSDK: 302f0a8f190d855868ea07f246ce4f9b44c392ae
-  GVRKit: 424e48fafa9f8a6249a14ffda48d2f1dbe3d9def
-  GVRSDK: 0cb9d0ce06a84d698e61e3db9509766022dcf815
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
+  GVRAudioSDK: bd444fd786ff3191cb1a33774253908b57e5710d
+  GVRKit: d3c830bf269dfea19cc044e94207873cd7004aac
+  GVRSDK: 319c8dc99759d029a44a7826327423d8ffe81b9c
 
-PODFILE CHECKSUM: b6d59d6584c2a513974019c29eac9dd2cecaa724
+PODFILE CHECKSUM: 8d158edf1c9f7b83f862faef39784cb26b25c2bb
 
 COCOAPODS: 1.5.0

@@ -1,14 +1,17 @@
 //
-//  HapticTreasureHuntRenderer.swift
-//  HapticTreasureHunt
+//  HaptiHuntRenderer.swift
+//  HaptiHunt
 //
 //  Created by Jacob Rockland on 4/11/18.
-//  Copyright © 2018 Jacob Rockland. All rights reserved.
+//  Copyright © 2018 Somatic Labs. All rights reserved.
 //
 
 import SwiftyZorb
 
-class HapticTreasureHuntRenderer: TreasureHuntRenderer {
+/**
+ Custom renderer for adding haptic effects to Google Cardboard demo
+ */
+class HaptiHuntRenderer: TreasureHuntRenderer {
     
     // MARK: - Renderer Properties
     
@@ -67,15 +70,15 @@ class HapticTreasureHuntRenderer: TreasureHuntRenderer {
         
         // Trigger pattern if time for update or trigger has changed
         // Successfully triggered pattern
-        if (HapticTreasureHuntRenderer.triggerHaptics ||
-            ((pattern != HapticTreasureHuntRenderer.previousTrigger) && (HapticTreasureHuntRenderer.previousTrigger !=  .🎊))) {
+        if (HaptiHuntRenderer.triggerHaptics ||
+            ((pattern != HaptiHuntRenderer.previousTrigger) && (HaptiHuntRenderer.previousTrigger !=  .🎊))) {
             print(pattern.rawValue)
             
             // Flip flag
-            HapticTreasureHuntRenderer.triggerHaptics = false
+            HaptiHuntRenderer.triggerHaptics = false
             
             // Update previous trigger
-            HapticTreasureHuntRenderer.previousTrigger = pattern
+            HaptiHuntRenderer.previousTrigger = pattern
             
             // Trigger pattern
             SwiftyZorb.triggerPattern(pattern) { result in
@@ -106,10 +109,10 @@ class HapticTreasureHuntRenderer: TreasureHuntRenderer {
             // Haptic timer
             hapticTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (timer) in
                 // Flip flag
-                HapticTreasureHuntRenderer.triggerHaptics = false
+                HaptiHuntRenderer.triggerHaptics = false
                 
                 // Update previous trigger
-                HapticTreasureHuntRenderer.previousTrigger = .🎊
+                HaptiHuntRenderer.previousTrigger = .🎊
                 
                 // Trigger confetti pattern
                 SwiftyZorb.triggerPattern(.🎊) { result in
@@ -117,10 +120,6 @@ class HapticTreasureHuntRenderer: TreasureHuntRenderer {
                     case .success:
                         // Successfully triggered pattern
                         print("🎊")
-                        
-                        // Play success sound
-//                        let success_source_id = self.gvr_audio_engine.createStereoSound(kSuccessSoundFile)
-//                        self.gvr_audio_engine.playSound(success_source_id, loopingEnabled: false)
                         
                         // Generate the next cube.
                         self.spawnCube()
