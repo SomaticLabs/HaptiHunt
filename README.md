@@ -64,7 +64,15 @@ open HaptiHunt.xcworkspace
 
 ## Usage
 
-TODO
+After launching the HaptiHunt app, the application will try to establish a connection to a Zorb Touch hardware device almost immediately.
+
+To ensure that a connection is made, reset your hardware device or put it into pairing mode immediately before launching the HaptiHunt demo. You can do this by connecting your Zorb Touch hardware to power via microUSB, pressing its button, and disconnecting power. If you are having trouble, please [send us an email](mailto:developers@somaticlabs.io).
+
+After the HaptiHunt app has connected to your Zorb Touch hardware, you may be presented with a pairing request in the app—if so, press "Accept".
+
+Once connected to your Zorb Touch hardware, you can press the Google Cardboard icon and will be prompted to rotate your device and insert it into your Google Daydream or Google Cardboard supported headset.
+
+From here, place your VR headset and haptic display on your head enjoy the demo!
 
 ## Icon Attribution
 

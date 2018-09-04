@@ -1,11 +1,8 @@
-// This file is from a Google Cardboard demo provided by Google: https://github.com/googlevr/gvr-ios-sdk/tree/master/Samples/TreasureHunt
+// This file is originally from a Google Cardboard demo provided by Google: https://github.com/googlevr/gvr-ios-sdk/tree/master/Samples/TreasureHunt
+// Some modifications have been made to this file by Jacob Rockland, 09/04/2018
 
 #import "GVRAudioEngine.h"
 #import "GVRKit/GVRRenderer.h"
-
-// Sample sound file names.
-static const NSString *kObjectSoundFile = @"cube_sound.wav";
-static const NSString *kSuccessSoundFile = @"success.wav";
 
 // Cube focus angle threshold in radians.
 static const float kFocusThresholdRadians = 0.5f;

@@ -1,4 +1,5 @@
-// This file is from a Google Cardboard demo provided by Google: https://github.com/googlevr/gvr-ios-sdk/tree/master/Samples/TreasureHunt
+// This file is originally from a Google Cardboard demo provided by Google: https://github.com/googlevr/gvr-ios-sdk/tree/master/Samples/TreasureHunt
+// Some modifications have been made to this file by Jacob Rockland, 09/04/2018
 
 #if !defined(__has_feature) || !__has_feature(objc_arc)
 #error "This file requires ARC support. Compile with -fobjc-arc"
@@ -393,15 +394,11 @@ static void CheckGLError(const char *label) {
   GLuint _grid_vertex_buffer;
   GLuint _grid_color_buffer;
 
-//  GVRAudioEngine *_gvr_audio_engine; // FIXME?
-  int _sound_object_id;
   int _success_source_id;
   bool _is_cube_focused;
 }
 
 - (void)dealloc {
-  [_gvr_audio_engine stopSound:_sound_object_id];
-  [_gvr_audio_engine stop];
 }
 
 - (void)initializeGl {
@@ -508,42 +505,17 @@ static void CheckGLError(const char *label) {
   glBindBuffer(GL_ARRAY_BUFFER, _grid_color_buffer);
   glBufferData(GL_ARRAY_BUFFER, sizeof(_grid_colors), _grid_colors, GL_STATIC_DRAW);
 
-  // Initialize GVRCardboardAudio engine.
-  _gvr_audio_engine =
-      [[GVRAudioEngine alloc] initWithRenderingMode:kRenderingModeBinauralHighQuality];
-  [_gvr_audio_engine preloadSoundFile:kObjectSoundFile];
-  [_gvr_audio_engine preloadSoundFile:kSuccessSoundFile];
-  [_gvr_audio_engine start];
-
   // Generate seed for random number generation.
   srand48(time(0));
-
-  // Spawn the first cube.
-  _sound_object_id = [_gvr_audio_engine createSoundObject:kObjectSoundFile];
 
   [self spawnCube];
   CheckGLError("init");
 }
 
-- (void)clearGl {
-  [_gvr_audio_engine stopSound:_sound_object_id];
-  [_gvr_audio_engine stop];
-
-  [super clearGl];
-}
-
 - (void)update:(GVRHeadPose *)headPose {
-  // Update audio listener's head rotation.
-  const GLKQuaternion head_rotation =
-      GLKQuaternionMakeWithMatrix4(GLKMatrix4Transpose([headPose headTransform]));
-  [_gvr_audio_engine setHeadRotation:head_rotation.q[0]
-                                   y:head_rotation.q[1]
-                                   z:head_rotation.q[2]
-                                   w:head_rotation.q[3]];
-  // Update the audio engine.
-  [_gvr_audio_engine update];
-
   // Check if the cube is focused.
+  const GLKQuaternion head_rotation =
+    GLKQuaternionMakeWithMatrix4(GLKMatrix4Transpose([headPose headTransform]));
   GLKVector3 source_cube_position =
       GLKVector3Make(_cube_position_x, _cube_position_y, _cube_position_z);
   _is_cube_focused = [self isLookingAtObject:&head_rotation sourcePosition:&source_cube_position];
@@ -642,10 +614,6 @@ static void CheckGLError(const char *label) {
   NSLog(@"User performed trigger action");
   // Check whether the object is found.
   if (_is_cube_focused) {
-     _success_source_id = [_gvr_audio_engine createStereoSound:kSuccessSoundFile];
-    [_gvr_audio_engine playSound:_success_source_id loopingEnabled:false];
-    // Vibrate the device on success.
-    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
     // Generate the next cube.
     [self spawnCube];
     return true;
@@ -653,25 +621,10 @@ static void CheckGLError(const char *label) {
   return false;
 }
 
-- (void)pause:(BOOL)pause {
-  [super pause:pause];
-
-  if (pause) {
-    [_gvr_audio_engine pauseSound:_sound_object_id];
-  } else {
-    [_gvr_audio_engine resumeSound:_sound_object_id];
-  }
-}
-
 // Spawns the next cube at a new position.
 - (void)spawnCube {
   // Set the new position and restart the playback.
   [self setRandomCubePosition:kMinCubeDistance maxLimit:kMaxCubeDistance];
-  [_gvr_audio_engine setSoundObjectPosition:_sound_object_id
-                                          x:_cube_position_x
-                                          y:_cube_position_y
-                                          z:_cube_position_z];
-  [_gvr_audio_engine playSound:_sound_object_id loopingEnabled:true];
 }
 
 // Sets a new position for the cube.

@@ -19,7 +19,7 @@
 		409A435C207EE0B2000CE67B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409A4358207EE0B2000CE67B /* SwiftyJSON.framework */; };
 		409A435D207EE0B2000CE67B /* SwiftyZorb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409A4359207EE0B2000CE67B /* SwiftyZorb.framework */; };
 		A635FFE6EF81E179BAB2FCB2 /* libPods-HaptiHunt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B52C96505DFFF9A4FE7F7464 /* libPods-HaptiHunt.a */; };
-		F96DE8C9477F6C5BD1029C76 /* libPods-HapticTreasureHunt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5360E71A007E3D8839ADD236 /* libPods-HapticTreasureHunt.a */; };
+		F96DE8C9477F6C5BD1029C76 /* libPods-HaptiHunt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5360E71A007E3D8839ADD236 /* libPods-HaptiHunt.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,9 +37,9 @@
 		409A4357207EE0B2000CE67B /* SwiftyBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBluetooth.framework; path = Carthage/Build/iOS/SwiftyBluetooth.framework; sourceTree = "<group>"; };
 		409A4358207EE0B2000CE67B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		409A4359207EE0B2000CE67B /* SwiftyZorb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyZorb.framework; path = Carthage/Build/iOS/SwiftyZorb.framework; sourceTree = "<group>"; };
-		5291C45F666DBE0AC5F23CC9 /* Pods-HapticTreasureHunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HapticTreasureHunt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HapticTreasureHunt/Pods-HapticTreasureHunt.debug.xcconfig"; sourceTree = "<group>"; };
-		5360E71A007E3D8839ADD236 /* libPods-HapticTreasureHunt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HapticTreasureHunt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		719118138F6E6B55EAA2E3E8 /* Pods-HapticTreasureHunt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HapticTreasureHunt.release.xcconfig"; path = "Pods/Target Support Files/Pods-HapticTreasureHunt/Pods-HapticTreasureHunt.release.xcconfig"; sourceTree = "<group>"; };
+		5291C45F666DBE0AC5F23CC9 /* Pods-HaptiHunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaptiHunt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaptiHunt/Pods-HaptiHunt.debug.xcconfig"; sourceTree = "<group>"; };
+		5360E71A007E3D8839ADD236 /* libPods-HaptiHunt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaptiHunt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		719118138F6E6B55EAA2E3E8 /* Pods-HaptiHunt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaptiHunt.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaptiHunt/Pods-HaptiHunt.release.xcconfig"; sourceTree = "<group>"; };
 		B52C96505DFFF9A4FE7F7464 /* libPods-HaptiHunt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaptiHunt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD57C0565CAE9DD400938ABC /* Pods-HaptiHunt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaptiHunt.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaptiHunt/Pods-HaptiHunt.release.xcconfig"; sourceTree = "<group>"; };
 		C42022AF003B2BE24DEF5D12 /* Pods-HaptiHunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaptiHunt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaptiHunt/Pods-HaptiHunt.debug.xcconfig"; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F96DE8C9477F6C5BD1029C76 /* libPods-HapticTreasureHunt.a in Frameworks */,
+				F96DE8C9477F6C5BD1029C76 /* libPods-HaptiHunt.a in Frameworks */,
 				409A435A207EE0B2000CE67B /* Alamofire.framework in Frameworks */,
 				409A435B207EE0B2000CE67B /* SwiftyBluetooth.framework in Frameworks */,
 				409A435C207EE0B2000CE67B /* SwiftyJSON.framework in Frameworks */,
@@ -99,8 +99,8 @@
 		410CF1FFB112AA52EB487B60 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5291C45F666DBE0AC5F23CC9 /* Pods-HapticTreasureHunt.debug.xcconfig */,
-				719118138F6E6B55EAA2E3E8 /* Pods-HapticTreasureHunt.release.xcconfig */,
+				5291C45F666DBE0AC5F23CC9 /* Pods-HaptiHunt.debug.xcconfig */,
+				719118138F6E6B55EAA2E3E8 /* Pods-HaptiHunt.release.xcconfig */,
 				C42022AF003B2BE24DEF5D12 /* Pods-HaptiHunt.debug.xcconfig */,
 				BD57C0565CAE9DD400938ABC /* Pods-HaptiHunt.release.xcconfig */,
 			);
@@ -114,7 +114,7 @@
 				409A4357207EE0B2000CE67B /* SwiftyBluetooth.framework */,
 				409A4358207EE0B2000CE67B /* SwiftyJSON.framework */,
 				409A4359207EE0B2000CE67B /* SwiftyZorb.framework */,
-				5360E71A007E3D8839ADD236 /* libPods-HapticTreasureHunt.a */,
+				5360E71A007E3D8839ADD236 /* libPods-HaptiHunt.a */,
 				B52C96505DFFF9A4FE7F7464 /* libPods-HaptiHunt.a */,
 			);
 			name = Frameworks;
@@ -139,7 +139,7 @@
 			dependencies = (
 			);
 			name = HaptiHunt;
-			productName = HapticTreasureHunt;
+			productName = HaptiHunt;
 			productReference = 409A432F207EC092000CE67B /* HaptiHunt.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -428,7 +428,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SomaticLabs.HaptiHunt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "HapticTreasureHunt-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "HaptiHunt-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,7 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SomaticLabs.HaptiHunt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "HapticTreasureHunt-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "HaptiHunt-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
