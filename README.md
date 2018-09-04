@@ -16,7 +16,7 @@ This demo also makes use of [SwitfyZorb](https://github.com/SomaticLabs/SwiftyZo
 
 ## Requirements
 
-- iOS 9.0+
+- iOS 10.0+
 - Xcode 8.1+
 - Swift 4.0+
 
@@ -30,10 +30,41 @@ This demo also makes use of [SwitfyZorb](https://github.com/SomaticLabs/SwiftyZo
 
 ## Installation
 
+1. Clone this repository:
+
+```sh
+$ git clone git@github.com:SomaticLabs/HaptiHunt.git
+$ cd HaptiHunt
 ```
+
+2. Ensure that you have both [CocoaPods](https://guides.cocoapods.org/using/getting-started.html) and [Carthage](https://github.com/Carthage/Carthage) installed:
+
+```sh
+$ sudo gem install cocoapods
+$ brew update
+$ brew install carthage
+```
+
+3. Install dependencies:
+
+```sh
 pod update
 carthage update --platform iOS
 ```
+
+4. Open workspace (not project) in XCode:
+
+```sh
+open HaptiHunt.xcworkspace
+```
+
+5. Set your [code signing](https://developer.apple.com/support/code-signing/) preferences.
+
+6. Connect your iOS device, select as build target, and run app (CMD + R).
+
+## Usage
+
+TODO
 
 ## Icon Attribution
 
